@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 :root {
     font-family: 'Lexend', system-ui, Avenir, Helvetica, Arial, sans-serif;
     font-weight: 400;
@@ -8,6 +15,7 @@
 }
 
 * {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -37,6 +45,8 @@ body {
 }
 
 .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     max-width: 850px;
@@ -48,7 +58,12 @@ body {
     max-width: 230px;
     width: 100%;
     background: #6665DD;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     padding: 52px 26px 150px;
     color: #ffffff;
@@ -76,6 +91,8 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     width: calc(100% + 4px);
     height: 90%;
@@ -93,7 +110,12 @@ body {
 }
 
 .left-side__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     position: relative;
     z-index: 1;
@@ -117,6 +139,8 @@ body {
     position: absolute;
     bottom: 4px;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     width: calc(100% + 10px);
     height: 9px;
@@ -130,7 +154,12 @@ body {
 }
 
 .left-side__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     font-size: 13px;
     font-weight: 300;
@@ -139,6 +168,7 @@ body {
 .left-side__content--green {
     border-radius: 13px;
     background: #07B98A;
+    -webkit-box-shadow: 0 16px 16px -8px rgba(12, 12, 13, 0.05), 0 4px 4px -4px rgba(12, 12, 13, 0.05);
     box-shadow: 0 16px 16px -8px rgba(12, 12, 13, 0.05), 0 4px 4px -4px rgba(12, 12, 13, 0.05);
     padding: 36px 16px 32px 16px;
     margin-bottom: 57px;
@@ -153,7 +183,12 @@ body {
 }
 
 .right-side {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     width: 100%;
     padding: 62px 88px 52px;
@@ -189,7 +224,12 @@ body {
 }
 
 .right-side__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     color: #42526B;
     position: relative;
@@ -233,7 +273,12 @@ body {
 }
 
 .right-side__textContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     row-gap: 13px;
     margin-bottom: 30px;
@@ -254,9 +299,17 @@ body {
 }
 
 .right-side__contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
     align-items: flex-end;
+    -webkit-column-gap: 16px;
+    -moz-column-gap: 16px;
     column-gap: 16px;
     color: #061C3D;
 }
@@ -266,8 +319,15 @@ body {
 }
 
 .right-side__contact-col {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -279,8 +339,14 @@ body {
 }
 
 .right-side__contact-list li {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-column-gap: 8px;
+    -moz-column-gap: 8px;
     column-gap: 8px;
 }
 
@@ -289,15 +355,20 @@ body {
 }
 
 .right-side__contact-list-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     min-width: 17px;
 }
 
 .link-icon {
     background: url("../public/link-icon.svg") no-repeat center;
-    -webkit-background-size: 100% auto;
     background-size: 100% auto;
     width: 17px;
     height: 17px;
@@ -306,7 +377,6 @@ body {
 
 .mail-icon {
     background: url("../public/mail-icon.svg") no-repeat center;
-    -webkit-background-size: 100% auto;
     background-size: 100% auto;
     width: 17px;
     height: 17px;
@@ -315,7 +385,6 @@ body {
 
 .phone-icon {
     background: url("../public/phone-icon.svg") no-repeat center;
-    -webkit-background-size: 100% auto;
     background-size: 100% auto;
     width: 17px;
     height: 17px;
